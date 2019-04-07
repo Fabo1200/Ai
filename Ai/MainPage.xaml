@@ -9,6 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <TextBox FontSize="50" HorizontalAlignment="Center" Height="70" Margin="0,75,0,0" Text="Add Formula" VerticalAlignment="Top" Width="500" TextChanged="TextBox_TextChanged"/>
+        <TextBlock FontSize="50" HorizontalAlignment="Left" Height="70" Margin="75,75,0,0" Text="Math" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
 
     </Grid>
 </Page>

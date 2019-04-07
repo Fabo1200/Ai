@@ -5,7 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
-
+#include "Util/Util.h"
 using namespace Ai;
 
 using namespace Platform;
@@ -24,4 +24,12 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
+}
+
+
+void Ai::MainPage::TextBox_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e)
+{
+	Util ut;
+	ut.bCompString(ut.sConvertString(e->ToString()), "+");
+
 }

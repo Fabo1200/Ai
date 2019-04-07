@@ -6,6 +6,7 @@
 #pragma once
 
 #include "MainPage.g.h"
+#include "../Math/Math.h"
 
 namespace Ai
 {
@@ -17,5 +18,7 @@ namespace Ai
 	public:
 		MainPage();
 
+	private:
+		void TextBox_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e);
 	};
 }
